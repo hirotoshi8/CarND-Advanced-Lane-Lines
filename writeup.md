@@ -142,7 +142,7 @@ I implemented this step in `Build a Lane Finding Pipeline` section in `P4.ipynb`
 #### 1. Advanced lane line with my pipeline
 I provide a link to my final video output.  My pipeline can perform reasonably well on the entire project video.
 
-Here's a [link to my video result](video1)
+Here's a [link to my video result](./output_images/project.mp4)
 
 ---
 
