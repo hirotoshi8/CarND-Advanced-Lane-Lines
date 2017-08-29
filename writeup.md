@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 [image6]: ./output_images/sliding_window_approach_image.jpg "Fit Visual"
 [image7]: ./output_images/ROI_image.jpg "Fit Visual"
 [image8]: ./output_images/pipeline_result_image.jpg "Output"
-[video1]: ./output_images/project_video.mp4 "Video"
+[video1]: ./output_images/project.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
