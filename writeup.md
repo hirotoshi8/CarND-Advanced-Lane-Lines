@@ -38,7 +38,6 @@ The goals / steps of this project are the following:
 
 ### Camera Calibration
 
-#### 1. 
 I briefly state how I computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
 The code for this step is contained in the `Camera Calibration` cell of the IPython notebook called `P4_Camera_Calibration.ipynb`.  
@@ -55,17 +54,17 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 #### 1. Distortion-corrected
 I provide an example of a distortion-corrected image.
 Based on the result of above Camera calibration, I correct the distorted images.
-To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
+To demonstrate this step, I apply the distortion correction to one of the test images like this one:
 
 ![alt text][image2]
 
 #### 2. Create binary of image
-I describe how I tried color transforms, gradients or other methods to create a thresholded binary image. This step code is included in `Sample: plot the example image with each features` in `P4.ipynb`. I provide an example of some binary image result. In this analysis, HLS color space (especially `S` channel) and Gradient X direction is good features to detect lane line.
+I describe how I tried color transforms, gradients or other methods to create a thresholded binary image. This step code is contained in `Sample: plot the example image with each features` in `P4.ipynb`. I provide an example of some binary image result. In this analysis, HLS color space (especially `S` channel) and Gradient X direction is good features to detect lane line.
 
 ![alt text][image3]
 
 
-As a result, to convert to binary image, I used a combination of color (`S` and `L` channel in HLS color space) and gradient X thresholds to generate a binary image (thresholding steps in `Extract a binary image` cell in `P4.ipynb`).  Here's an example of my output for this step.
+As a result, to make to binary image, I used a combination of color (`S` and `L` channel in HLS color space) and gradient X thresholds to generate a binary image (thresholding steps in `Extract a binary image` cell in `P4.ipynb`).  Here's an example of my output for this step. In the pipeline image below, the blue color is result from `S` color channel of HLS and the green one is gradient X.
 
 ![alt text][image4]
 
@@ -115,7 +114,7 @@ I verified that my perspective transform was working as expected by drawing the 
 
 
 #### 4. Find the lane line
-I describe how I identified lane-line pixels and fit their positions with sliding windows approach.
+I demonstrate to identify lane-line pixels and fit their positions with sliding windows approach following the udacity's lecture
 
 ![alt text][image6]
 
@@ -125,12 +124,12 @@ I fit my lane lines with a 2nd order polynomial kinda like this:
 ![alt text][image7]
 
 #### 5. Calculate the curavature of the lane line
-I describe how I calculated the radius of curvature of the lane following udacity's lecture and the position of the vehicle with respect to center.
+I calculate the the radius of curvature of the lane following udacity's lecture and the position of the vehicle with respect to center.
 
 I did this in `Calculate the curvature of the road and lane line` in `P4.ipynb`.
 
 #### 6. Result of my pipeline for a test image
-I provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
+I provide an example image of my result plotted back down onto the road such that the lane area is identified clearly.
 
 I implemented this step in `Build a Lane Finding Pipeline` section in `P4.ipynb`.  Here is an example of my result on a test image:
 
